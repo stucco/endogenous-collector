@@ -13,12 +13,14 @@ This collector reads network flow data from an argus server and forwards the dat
 3. Alternatively, you can download [argus](http://qosient.com/argus), and [l2r](https://github.com/ornl-sava/l2r) and build them on your own.
 
 ## argus setup
-This argus collector script utilizes the argus' `ra` client. This script does not install or start an argus server. An argus server needs to be installed and started before `ra` can forward data. (See [argus' website](http://qosient.com/argus) for argus-server documentation.)
+This argus collector script utilizes the argus `ra` client. This script does not install or start an argus server. An argus server needs to be installed and started before `ra` can forward data. (See [argus' website](http://qosient.com/argus) for argus-server documentation.)
 
 Once argus server is installed, as a quick test you can run:
 
     sudo argus -P 561 -d &
     ra -S localhost:561
+
+If everything is working, then `ra` will output network-flow data.
 
 ## Running the collector
 To run the argus collector with default parameters run:
@@ -36,6 +38,6 @@ To run the argus collector with default parameters run:
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
     RMQ_PORT: RabbitMQ broker port (default 5672)
 
-To specify one of these options run:
+To specify some of these options run:
 
     OPTION1="value1" OPTION2="value2" ./collect_argus.sh
