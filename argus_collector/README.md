@@ -8,7 +8,7 @@ This collector reads network flow data from an argus server and forwards the dat
 
 2. To download the l2r binary run:
 
-        ./get-l2r.sh
+        ../get-l2r.sh
 
 3. Alternatively, you can download [argus](http://qosient.com/argus), and [l2r](https://github.com/ornl-sava/l2r) and build them on your own.
 
@@ -28,11 +28,9 @@ To run the argus collector with default parameters run:
     ./collect_argus.sh
 
 ### Options
-    RA_CMD the full path to the ra client (default ./ra)
     ARGUS_IP: argus server IP address (default 127.0.0.1)
     ARGUS_PORT: argus server port (default 561)
     
-    L2R_CMD: the full path to the l2r program (default ./l2r)
     EXCHANGE: RabbitMQ exchange name (default 'stucco')
     ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.argus')
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
