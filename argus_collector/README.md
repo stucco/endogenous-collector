@@ -27,6 +27,15 @@ To run the argus collector with default parameters run:
 
     ./collect_argus.sh
 
+### Scheduling the collector
+Once this script is started, it will continue to stream argus data to RabbitMQ. You can use `cron` to ensure this script is run every time the system starts:
+
+    crontab -e
+
+add:
+
+    @reboot /full/path/to/collect_argus.sh
+
 ### Options
     ARGUS_IP: argus server IP address (default 127.0.0.1)
     ARGUS_PORT: argus server port (default 561)

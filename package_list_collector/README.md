@@ -13,12 +13,21 @@ To run this collector with default parameters run:
 
     ./collect_installed_pkg_list.sh
 
+### Scheduling the collector
+This script a 'one-shot' collector, that is, it collects the data once and exits). You can use `cron` to schedule this script to run periodically. For example, to run this script once a day:
+
+    crontab -e
+
+add:
+
+    @daily /full/path/to/collect_installed_pkg_list.sh
+
 ### Options
     EXCHANGE: RabbitMQ exchange name (default 'stucco')
-    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.argus')
+    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.installed_package')
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
     RMQ_PORT: RabbitMQ broker port (default 5672)
 
 To specify some of these options run:
 
-    OPTION1="value1" OPTION2="value2" ./collect_argus.sh
+    OPTION1="value1" OPTION2="value2" ./collect_installed_pkg_list.sh
