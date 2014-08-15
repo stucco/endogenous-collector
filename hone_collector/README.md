@@ -18,10 +18,10 @@ This collector reads Hone data from the local host and forwards the data to a Ra
 
 2. Build and install Hone DataIngestor
 
-	mkdir DataIngestor/build
+        mkdir DataIngestor/build
         cd DataIngestor/build
         qmake ../DataIngestor.pro
-	make
+        make
         sudo make install
         cd ../..
 
