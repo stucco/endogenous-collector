@@ -7,7 +7,7 @@ ARGUS_PORT=${ARGS_PORT:-561}
 FIELDS="seq stime ltime saddr sport dir daddr dport proto pkts bytes"
 ARG_FIELDS=""
 for field in $FIELDS; do ARG_FIELDS="$ARG_FIELDS -s $field"; done
-RA_ARGS="-S ${ARGUS_IP}:${ARGUS_PORT} -c , $ARG_FIELDS -nnn - tcp or udp"
+RA_ARGS="-S ${ARGUS_IP}:${ARGUS_PORT} -c , $ARG_FIELDS -nn - tcp or udp"
 
 # l2r arguments
 EXCHANGE=${EXCHANGE:-'stucco'}

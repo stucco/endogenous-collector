@@ -32,4 +32,4 @@ add:
 
 To specify some of these options run:
 
-    OPTION1="value1" OPTION2="value2" ./collect_installed_pkg_list.sh
+    OPTION1="value1" OPTION2="value2" ./collect_login_events.sh
