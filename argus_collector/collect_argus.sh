@@ -11,7 +11,7 @@ RA_ARGS="-S ${ARGUS_IP}:${ARGUS_PORT} -c , $ARG_FIELDS -nn - tcp or udp"
 
 # l2r arguments
 EXCHANGE=${EXCHANGE:-'stucco'}
-ROUTING_KEY=${ROUTING_KEY:-'stucco.in.argus'}
+ROUTING_KEY=${ROUTING_KEY:-'stucco.in.structured.argus'}
 RMQ_IP=${RMQ_IP:-'127.0.0.1'}
 RMQ_PORT=${RMQ_PORT:-5672}
 

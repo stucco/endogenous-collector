@@ -57,7 +57,7 @@ add:
     HONE_DEV: path to Hone device (default /dev/hone)
     
     EXCHANGE: RabbitMQ exchange name (default 'stucco')
-    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.hone')
+    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.structured.hone')
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
     RMQ_PORT: RabbitMQ broker port (default 5672)
 

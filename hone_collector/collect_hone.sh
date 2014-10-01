@@ -5,7 +5,7 @@ HONE_DEV=${HONE_DEV:-'/dev/hone'}
 
 # l2r arguments
 EXCHANGE=${EXCHANGE:-'stucco'}
-ROUTING_KEY=${ROUTING_KEY:-'stucco.in.hone'}
+ROUTING_KEY=${ROUTING_KEY:-'stucco.in.structured.hone'}
 RMQ_IP=${RMQ_IP:-'127.0.0.1'}
 RMQ_PORT=${RMQ_PORT:-5672}
 

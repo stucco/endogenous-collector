@@ -24,7 +24,7 @@ add:
 
 ### Options
     EXCHANGE: RabbitMQ exchange name (default 'stucco')
-    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.installed_package')
+    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.structured.installed_package')
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
     RMQ_PORT: RabbitMQ broker port (default 5672)
 

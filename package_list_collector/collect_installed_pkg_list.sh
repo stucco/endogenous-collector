@@ -4,7 +4,7 @@ HOSTNAME=`hostname`
 
 # l2r arguments
 EXCHANGE=${EXCHANGE:-'stucco'}
-ROUTING_KEY=${ROUTING_KEY:-'stucco.in.installed_package'}
+ROUTING_KEY=${ROUTING_KEY:-'stucco.in.structured.installed_package'}
 RMQ_IP=${RMQ_IP:-'127.0.0.1'}
 RMQ_PORT=${RMQ_PORT:-5672}
 

@@ -26,7 +26,7 @@ add:
     AUTHLOG_PATH: Full path to auth.log (default '/var/log/auth.log')
 
     EXCHANGE: RabbitMQ exchange name (default 'stucco')
-    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.login_events')
+    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.structured.login_events')
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
     RMQ_PORT: RabbitMQ broker port (default 5672)
 

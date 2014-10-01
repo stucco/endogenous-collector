@@ -21,7 +21,7 @@ AUTHLOG_PATH=${AUTHLOG_PATH:-'/var/log/auth.log'}
 
 # l2r arguments
 EXCHANGE=${EXCHANGE:-'stucco'}
-ROUTING_KEY=${ROUTING_KEY:-'stucco.in.login_events'}
+ROUTING_KEY=${ROUTING_KEY:-'stucco.in.structured.login_events'}
 RMQ_IP=${RMQ_IP:-'127.0.0.1'}
 RMQ_PORT=${RMQ_PORT:-5672}
 

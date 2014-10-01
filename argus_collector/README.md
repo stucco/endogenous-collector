@@ -41,7 +41,7 @@ add:
     ARGUS_PORT: argus server port (default 561)
     
     EXCHANGE: RabbitMQ exchange name (default 'stucco')
-    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.argus')
+    ROUTING_KEY: RabbitMQ routing key (default 'stucco.in.structured.argus')
     RMQ_IP: RabbitMQ broker IP (default 127.0.0.1)
     RMQ_PORT: RabbitMQ broker port (default 5672)
 
